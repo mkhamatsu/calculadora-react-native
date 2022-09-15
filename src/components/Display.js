@@ -7,8 +7,8 @@ function Display(props) {
     return (
         <View style={styles.display}>
             <TextInput
-                style={styles.displayTxt}
-                value={String(props.name)}>
+                style={styles.displayText}
+                value={String(props.value)}>
             </TextInput>
         </View>
     );
@@ -17,11 +17,13 @@ function Display(props) {
 const styles = StyleSheet.create({
     display: {
         backgroundColor: "black",
-        // padding: 75,
-        // heigth: 500,               
+        flexDirection: "row",
+        justifyContent: "flex-end",
+        padding: 45,
+        heigth: 200,               
     },
-    displayTxt:{
-        fontSize: 40,
+    displayText:{
+        fontSize: 60,
         color: "#fff"
     }
 })
